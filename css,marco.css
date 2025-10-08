@@ -1,0 +1,74 @@
+/* 1. Selector universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Selector de etiqueta */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7e9;
+}
+
+/* 3. Selector de clase */
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #2e7d32;
+  padding: 10px;
+}
+
+/* 4. Selector descendente */
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+/* 5. Selector de atributo */
+a[href] {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 6. Pseudoclase */
+a:hover {
+  text-decoration: underline;
+}
+
+/* 7. Selector de grupo */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #388e3c;
+  color: white;
+}
+
+/* 8. Flexbox para cuadrícula flexible */
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+aside {
+  flex: 1;
+  background-color: #c8e6c9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 9. Selector de figura */
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
